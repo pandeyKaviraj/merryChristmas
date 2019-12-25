@@ -7,14 +7,27 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var playSound = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let sound = Bundle.main.path(forResource: "merry", ofType: "wav")
+        do {
+            playSound = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        }
+        catch {
+            print(error)
+        }
     }
 
-
+    @IBAction func playMusic(_ sender: UIButton) {
+        playSound.play()
+    }
+    
 }
 

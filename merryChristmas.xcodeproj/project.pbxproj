@@ -13,6 +13,8 @@
 		5F79815023B30FA60071565F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F79814E23B30FA60071565F /* Main.storyboard */; };
 		5F79815223B30FA90071565F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F79815123B30FA90071565F /* Assets.xcassets */; };
 		5F79815523B30FA90071565F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F79815323B30FA90071565F /* LaunchScreen.storyboard */; };
+		5F79815E23B30FFA0071565F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F79815D23B30FFA0071565F /* AVFoundation.framework */; };
+		5F79816123B3110F0071565F /* merry.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5F79816023B3110F0071565F /* merry.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5F79815123B30FA90071565F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F79815423B30FA90071565F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F79815623B30FA90071565F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F79815D23B30FFA0071565F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5F79816023B3110F0071565F /* merry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = merry.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F79815E23B30FFA0071565F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +46,9 @@
 			isa = PBXGroup;
 			children = (
 				5F79814723B30FA60071565F /* merryChristmas */,
+				5F79815F23B3104E0071565F /* Sounds */,
 				5F79814623B30FA60071565F /* Products */,
+				5F79815C23B30FF90071565F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +72,22 @@
 				5F79815623B30FA90071565F /* Info.plist */,
 			);
 			path = merryChristmas;
+			sourceTree = "<group>";
+		};
+		5F79815C23B30FF90071565F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F79815D23B30FFA0071565F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F79815F23B3104E0071565F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5F79816023B3110F0071565F /* merry.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F79816123B3110F0071565F /* merry.wav in Resources */,
 				5F79815523B30FA90071565F /* LaunchScreen.storyboard in Resources */,
 				5F79815223B30FA90071565F /* Assets.xcassets in Resources */,
 				5F79815023B30FA60071565F /* Main.storyboard in Resources */,
